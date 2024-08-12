@@ -1,20 +1,13 @@
-body {
-    margin: 0px;
-    padding: 0px;
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
     color: #484848;
-    display: flex;
-    flex-wrap: wrap;
     font-size: 14px;
-    font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-  .container {
+    font-family: Circular, "Helvetica Neue", Arial, sans-serif;
+}
+div.container {
     max-width: 1000px;
     margin: 30px auto;
-  }
-  @media screen and (max-width: 1000px) {
-    .container {
-      width: 95%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
+}
