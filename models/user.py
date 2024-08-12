@@ -1,13 +1,17 @@
 #!/usr/bin/python3
-"""user class, subclass of BaseModel
-"""
-
+"""Defines a class User that inherits from class BaseModel"""
 from models.base_model import BaseModel
-import json
 
 
 class User(BaseModel):
-    '''subclass of BaseModel class'''
+    """A class that represents a user
+
+    Attributes:
+        email (str): users email
+        passsword (str): users password
+        first_name (str): users first name
+        last_name (str): users last name
+    """
 
     email = ""
     password = ""

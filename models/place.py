@@ -1,26 +1,25 @@
 #!/usr/bin/python3
-"""
-Place class, a subclass of BaseModel class
-"""
+"""Defines a class Place that inherits from BaseModel"""
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
+    """Represents the Place
+
+    Attribute:
+        city_id (str): City's ID
+        user_id (str): User's ID
+        name (str): name of the Place
+        description (str): Description of the city
+        number_rooms (int): Number of rooms
+        number_bathrooms (int): number of bathrooms
+        max_guest (int): number of maximum guests
+        price_by_night (int): price by night
+        latitude (float): latitude of place
+        longitude (float): longitude of place
+        amenity_ids (list): list of amenity ID's
     """
-    A subclass of BaseModel class
-    Public class attributes:
-        city_id:             (str) will be City.id
-        user_id:             (str) will be User.id
-        name:                (str)
-        description:         (str)
-        number_rooms:        (int) 0
-        number_bathrooms:    (int) 0
-        max_guest:           (int) 0
-        price_by_night:      (int) 0
-        latitude:            (float) 0.0
-        longitude:           (float) 0.0
-        amenity_ids:         (list) will be Amenity.id
-    """
+
     city_id = ""
     user_id = ""
     name = ""
